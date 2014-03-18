@@ -1,0 +1,21 @@
+﻿Instructions
+============
+
+This is a Model-View-Presenter framework.
+
+Typically the Models are strongly-typed Items. Out of the box this library supports (and requires) Constellation.Sitecore.Items
+
+Views are either Web Custom Controls or Web User Controls. They should descend from the appropriate base View class.
+
+Presenters descend from IPresenter. The Default presenter expects the View's datasource to be resolved to a Constellation Item, which
+is passed to the corresponding view.
+
+Example:
+
+MyBodyCopyView<IContentPage>
+
+will cause the default presenter to return the Context Item as a custom type of IContentPage back to the View. This IContentPage object
+will be the MyBodyCopyView.ViewModel property value.
+
+Views can suport any type of ViewModel, as long as there is a Presenter that also supports the same TModel. Note that each TModel type
+can only be supported by one Presenter, so plan accordingly.

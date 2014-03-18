@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+	<id>$id$</id>
+	<version>$version$</version>
+	<title>$title$</title>
+	<authors>Richard J. Cabral</authors>
+	<owners>Richard J. Cabral</owners>
+	<projectUrl>https://github.com/sitecorerick/diamond</projectUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<summary>An MVP framework for Sitecore</summary>
+	<description>
+		This namespace makes use of Constellation.Sitecore.Items to provide a Sitecore Rendering framework with dependency injection.
+		
+		Renderings should decend from Views.WebControlView or Views.UserControlView. The default Presenter will handle single-Item
+		datasources as strongly-typed Items. It is possible to add your own Presenters (for custom Models) by implementing the IPresenter 
+		interface.
+		
+		This namespace includes a handful of WebForms-compatible examples.
+	</description>
+	<releaseNotes>Initial NuGet release</releaseNotes>
+	<copyright>Copyright 2014</copyright>
+	<tags>Sitecore</tags>
+  </metadata>
+</package>
