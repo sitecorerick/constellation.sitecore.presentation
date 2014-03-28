@@ -30,14 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Constellation.Html">
-      <HintPath>packages\Constellation.Html.1.0.5189.24554\lib\net45\Constellation.Html.dll</HintPath>
+    <Reference Include="Constellation.Html, Version=1.0.5200.18690, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Constellation.Html.1.0.5200.18690\lib\net45\Constellation.Html.dll</HintPath>
     </Reference>
-    <Reference Include="Constellation.Sitecore">
-      <HintPath>packages\Constellation.Sitecore.1.0.5189.27028\lib\net45\Constellation.Sitecore.dll</HintPath>
+    <Reference Include="Constellation.Sitecore, Version=1.0.5199.26917, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Constellation.Sitecore.1.0.5199.26917\lib\net45\Constellation.Sitecore.dll</HintPath>
     </Reference>
-    <Reference Include="Constellation.Sitecore.Items">
-      <HintPath>packages\Constellation.Sitecore.Items.1.0.5190.19040\lib\net45\Constellation.Sitecore.Items.dll</HintPath>
+    <Reference Include="Constellation.Sitecore.Items, Version=1.0.5200.18816, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Constellation.Sitecore.Items.1.0.5200.18816\lib\net45\Constellation.Sitecore.Items.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>_Binaries\Sitecore\Sitecore.Kernel.dll</HintPath>
@@ -46,11 +49,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CandidateTypeList.cs" />
@@ -78,8 +76,8 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Constellation.Sitecore.Presentation.Instructions.txt" />
-    <Content Include="Constellation.Sitecore.Presentation.License.txt" />
+    <Content Include="Instructions\Constellation.Sitecore.Presentation.Instructions.txt" />
+    <Content Include="License\Constellation.Sitecore.Presentation.License.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

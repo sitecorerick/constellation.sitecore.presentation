@@ -6,7 +6,7 @@
 	<title>$title$</title>
 	<authors>Richard J. Cabral</authors>
 	<owners>Richard J. Cabral</owners>
-	<projectUrl>https://github.com/sitecorerick/diamond</projectUrl>
+	<projectUrl>https://github.com/sitecorerick/constellation.sitecore.presentation</projectUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<summary>An MVP framework for Sitecore</summary>
 	<description>
@@ -18,7 +18,7 @@
 		
 		This namespace includes a handful of WebForms-compatible examples.
 	</description>
-	<releaseNotes>Initial NuGet release</releaseNotes>
+	<releaseNotes>Nuget package cleanup</releaseNotes>
 	<copyright>Copyright 2014</copyright>
 	<tags>Sitecore</tags>
   </metadata>
