@@ -12,7 +12,7 @@ is passed to the corresponding view.
 
 Example:
 
-MyBodyCopyView<IContentPage>
+MyBodyCopyView<IContentPage> : UserControlView
 
 will cause the default presenter to return the Context Item as a custom type of IContentPage back to the View. This IContentPage object
 will be the MyBodyCopyView.ViewModel property value.
