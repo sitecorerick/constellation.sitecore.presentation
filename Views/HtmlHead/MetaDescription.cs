@@ -3,7 +3,7 @@
 //      Copyright (c) @SitecoreDiamond. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Presentation.Views.HtmlHead
+namespace Constellation.Sitecore.Views.HtmlHead
 {
     /// <summary>
     /// Renders a meta tag for description.

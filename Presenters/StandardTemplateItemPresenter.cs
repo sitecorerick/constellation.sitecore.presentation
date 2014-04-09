@@ -3,9 +3,9 @@
 //      Copyright (c) @SitecoreDiamond. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Presentation.Presenters
+namespace Constellation.Sitecore.Presenters
 {
-    using Constellation.Sitecore.Presentation.Views;
+    using Constellation.Sitecore.Views;
 
     /// <summary>
     /// Converts the View's Datasource into the requested strongly-typed-Item.

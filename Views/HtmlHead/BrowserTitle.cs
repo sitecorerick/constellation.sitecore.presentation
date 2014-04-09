@@ -3,7 +3,7 @@
 //      Copyright (c) @SitecoreDiamond. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Presentation.Views.HtmlHead
+namespace Constellation.Sitecore.Views.HtmlHead
 {
     using System.Diagnostics.CodeAnalysis;
 

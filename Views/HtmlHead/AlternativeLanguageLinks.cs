@@ -3,7 +3,7 @@
 //      Copyright (c) @SitecoreDiamond. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Presentation.Views.HtmlHead
+namespace Constellation.Sitecore.Views.HtmlHead
 {
     using Constellation.Html;
     using Constellation.Sitecore.Items;

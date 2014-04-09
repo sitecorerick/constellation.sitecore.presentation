@@ -3,10 +3,10 @@
 //      Copyright (c) @SitecoreDiamond. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Presentation.Views
+namespace Constellation.Sitecore.Views
 {
     using Constellation.Sitecore.Items;
-    using Constellation.Sitecore.Presentation.Presenters;
+    using Constellation.Sitecore.Presenters;
 
     using global::Sitecore;
     using global::Sitecore.Data;
