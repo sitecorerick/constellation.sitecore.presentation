@@ -1,9 +1,4 @@
-﻿// -----------------------------------------------------------------------------
-// <copyright file="PresenterWithRequestCachedModel.cs" company="genuine">
-//      Copyright (c) @SitecoreDiamond. All rights reserved.
-// </copyright>
-// -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Presenters
+﻿namespace Constellation.Sitecore.Presenters
 {
 	using Constellation.Sitecore.Views;
 	using System.Web;

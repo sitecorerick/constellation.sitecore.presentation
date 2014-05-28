@@ -1,9 +1,4 @@
-﻿// -----------------------------------------------------------------------------
-// <copyright file="CandidateTypeList.cs" company="genuine">
-//      Copyright (c) @SitecoreDiamond. All rights reserved.
-// </copyright>
-// -----------------------------------------------------------------------------
-namespace Constellation.Sitecore
+﻿namespace Constellation.Sitecore
 {
 	using System;
 	using System.Collections.Generic;

@@ -18,7 +18,7 @@
 		
 		This namespace includes a handful of WebForms-compatible examples.
 	</description>
-	<releaseNotes>Namespace change.</releaseNotes>
+	<releaseNotes>Removed text headers from code. Removed site object as a requiement for DoRender.</releaseNotes>
 	<copyright>Copyright 2014</copyright>
 	<tags>Sitecore</tags>
   </metadata>

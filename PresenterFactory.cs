@@ -1,9 +1,4 @@
-﻿// -----------------------------------------------------------------------------
-// <copyright file="PresenterFactory.cs" company="genuine">
-//      Copyright (c) @SitecoreRick. All rights reserved.
-// </copyright>
-// -----------------------------------------------------------------------------
-namespace Constellation.Sitecore
+﻿namespace Constellation.Sitecore
 {
 	using Constellation.Sitecore.Items;
 	using Constellation.Sitecore.Presenters;

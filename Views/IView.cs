@@ -1,9 +1,4 @@
-﻿// -----------------------------------------------------------------------------
-// <copyright file="IView.cs" company="genuine">
-//      Copyright (c) @SitecoreDiamond. All rights reserved.
-// </copyright>
-// -----------------------------------------------------------------------------
-namespace Constellation.Sitecore.Views
+﻿namespace Constellation.Sitecore.Views
 {
 	using Constellation.Sitecore.Items;
 
