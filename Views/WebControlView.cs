@@ -9,6 +9,7 @@
 	using global::Sitecore.Links;
 	using global::Sitecore.Sites;
 	using Sitecore;
+	using System;
 	using System.Collections.Specialized;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Web;
@@ -124,7 +125,9 @@
 
 			if (DatasourceResolver.IsQuery(this.DataSource))
 			{
+				// ReSharper disable CSharpWarnings::CS0612
 				Item[] items = this.GetItems();
+				// ReSharper restore CSharpWarnings::CS0612
 				if (items != null && items.Length > 0)
 				{
 					return items[0];
@@ -147,6 +150,7 @@
 		/// item.
 		/// </summary>
 		/// <returns>An array of Sitecore Item instances.</returns>
+		[Obsolete]
 		public Item[] GetItems()
 		{
 			if (DatasourceResolver.IsQuery(this.DataSource))

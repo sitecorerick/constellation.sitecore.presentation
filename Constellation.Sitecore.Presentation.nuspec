@@ -18,7 +18,7 @@
 		
 		This namespace includes a handful of WebForms-compatible examples.
 	</description>
-	<releaseNotes>Removed text headers from code. Removed site object as a requiement for DoRender.</releaseNotes>
+	<releaseNotes>Deprecated IView.GetItems(). Ensured that IView.GetItem() logic was identical for WebControlView and UserControlView</releaseNotes>
 	<copyright>Copyright 2014</copyright>
 	<tags>Sitecore</tags>
   </metadata>

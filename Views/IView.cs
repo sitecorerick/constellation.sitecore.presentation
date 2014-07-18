@@ -1,11 +1,11 @@
 ﻿namespace Constellation.Sitecore.Views
 {
 	using Constellation.Sitecore.Items;
-
 	using global::Sitecore.Data;
 	using global::Sitecore.Data.Items;
 	using global::Sitecore.Globalization;
 	using global::Sitecore.Links;
+	using System;
 
 	/// <summary>
 	/// The contract for Constellation.Sitecore.Presentation presentation components
@@ -78,6 +78,7 @@
 		/// An array of either the resolved Datasource or the Context Item.
 		/// </summary>
 		/// <returns>An array of Items. The Array may be empty.</returns>
+		[Obsolete]
 		Item[] GetItems();
 
 		/// <summary>

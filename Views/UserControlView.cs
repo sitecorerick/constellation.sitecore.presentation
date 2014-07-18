@@ -2,7 +2,6 @@
 {
 	using Constellation.Sitecore.Items;
 	using Constellation.Sitecore.Presenters;
-
 	using global::Sitecore;
 	using global::Sitecore.Data;
 	using global::Sitecore.Data.Items;
@@ -10,8 +9,8 @@
 	using global::Sitecore.Globalization;
 	using global::Sitecore.Links;
 	using global::Sitecore.Web.UI.WebControls;
-
 	using Sitecore;
+	using System;
 	using System.Collections.Specialized;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Web;
@@ -50,7 +49,9 @@
 		/// <summary>
 		/// Gets or sets a value to use as the "id" attribute on the outermost HTML container element.
 		/// </summary>
+		// ReSharper disable InconsistentNaming
 		public string CssID { get; set; }
+		// ReSharper restore InconsistentNaming
 
 		/// <summary>
 		/// Gets or sets a value to use as the "class" attribute on the outermost HTML container element.
@@ -213,9 +214,16 @@
 		/// <returns>An Item.</returns>
 		public Item GetItem()
 		{
+			if (this.DataSource.Contains("$site"))
+			{
+				this.DataSource = this.DataSource.Replace("$site", global::Sitecore.Context.Site.Name);
+			}
+
 			if (DatasourceResolver.IsQuery(this.DataSource))
 			{
+				// ReSharper disable CSharpWarnings::CS0612
 				Item[] items = this.GetItems();
+				// ReSharper restore CSharpWarnings::CS0612
 				if (items != null && items.Length > 0)
 				{
 					return items[0];
@@ -229,11 +237,6 @@
 				return DatasourceResolver.Resolve(this.DataSource.Replace(".", context.Paths.FullPath), context.Database);
 			}
 
-			if (this.DataSource.Contains("$site"))
-			{
-				return DatasourceResolver.Resolve(this.DataSource.Replace("$site", global::Sitecore.Context.Site.Name), global::Sitecore.Context.Database);
-			}
-
 			return this.GetSingleItemFromDataSource();
 		}
 
@@ -241,6 +244,7 @@
 		/// An array of either the resolved Datasource or the Context Item.
 		/// </summary>
 		/// <returns>An array of Items. The Array may be empty.</returns>
+		[Obsolete]
 		public Item[] GetItems()
 		{
 			if (DatasourceResolver.IsQuery(this.DataSource))
