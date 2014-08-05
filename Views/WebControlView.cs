@@ -304,7 +304,11 @@
 		{
 			if (global::Sitecore.Context.PageMode.IsPageEditorEditing)
 			{
-				if (this.ViewModel == null)
+				if (this.RenderIfViewModelIsNull || this.ViewModel != null)
+				{
+					this.RenderPageEditorEditing(output);	
+				}
+				else
 				{
 					var sourceString = "context item";
 
@@ -315,8 +319,6 @@
 
 					output.Write("[Rendering {0} is not compatible with datasource: {1} or the datasource string returned null.]", this.GetType().Name, sourceString);
 				}
-
-				this.RenderPageEditorEditing(output);
 			}
 			else
 			{
