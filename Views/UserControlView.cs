@@ -36,6 +36,11 @@
 		/// </summary>
 		private TModel model;
 
+		/// <summary>
+		/// The presenter.
+		/// </summary>
+		private IPresenter<TModel> presenter;
+
 		#region Properties
 		/// <summary>
 		/// Gets or sets a value indicating whether the output can be cached.
@@ -179,7 +184,10 @@
 		/// </remarks>
 		protected IPresenter<TModel> Presenter
 		{
-			get { return PresenterFactory.GetPresenter<TModel>(); }
+			get
+			{
+				return this.presenter ?? (this.presenter = PresenterFactory.GetPresenter<TModel>());
+			}
 		}
 
 		/// <summary>

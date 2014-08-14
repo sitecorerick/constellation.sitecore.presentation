@@ -40,8 +40,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\Constellation.Sitecore.1.6.5301.24716\lib\net45\Constellation.Sitecore.dll</HintPath>
     </Reference>
-    <Reference Include="Constellation.Sitecore.Items">
-      <HintPath>packages\Constellation.Sitecore.Items.1.5.5256.20952\lib\net45\Constellation.Sitecore.Items.dll</HintPath>
+    <Reference Include="Constellation.Sitecore.Items, Version=1.6.5312.20078, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Constellation.Sitecore.Items.1.6.5312.20078\lib\net45\Constellation.Sitecore.Items.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\_Binaries\Sitecore\Sitecore.Kernel.dll</HintPath>

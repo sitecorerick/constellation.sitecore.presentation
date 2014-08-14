@@ -18,7 +18,7 @@
 		
 		This namespace includes a handful of WebForms-compatible examples.
 	</description>
-	<releaseNotes>Deprecated IView.GetItems(). Ensured that IView.GetItem() logic was identical for WebControlView and UserControlView</releaseNotes>
+	<releaseNotes>IView.Presenter is now lazy load, but not temporary.</releaseNotes>
 	<copyright>Copyright 2014</copyright>
 	<tags>Sitecore</tags>
   </metadata>

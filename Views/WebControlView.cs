@@ -27,6 +27,11 @@
 		/// The model relevant to the view's context.
 		/// </summary>
 		private TModel model;
+
+		/// <summary>
+		/// The presenter.
+		/// </summary>
+		private IPresenter<TModel> presenter;
 		#endregion
 
 		#region Properties
@@ -106,7 +111,10 @@
 		/// </remarks>
 		protected IPresenter<TModel> Presenter
 		{
-			get { return PresenterFactory.GetPresenter<TModel>(); }
+			get
+			{
+				return this.presenter ?? (this.presenter = this.GetPresenter());
+			}
 		}
 		#endregion
 
@@ -373,6 +381,17 @@
 		protected virtual LinkProvider GetLinkProvider()
 		{
 			return LinkManager.Provider;
+		}
+
+		/// <summary>
+		/// Override to supply a specific presenter other than what the PresenterFactory will dynamically inject.
+		/// </summary>
+		/// <returns>
+		/// The presenter.
+		/// </returns>
+		protected virtual IPresenter<TModel> GetPresenter()
+		{
+			return PresenterFactory.GetPresenter<TModel>();
 		}
 		#endregion
 	}
