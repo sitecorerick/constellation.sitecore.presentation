@@ -186,7 +186,7 @@
 		{
 			get
 			{
-				return this.presenter ?? (this.presenter = PresenterFactory.GetPresenter<TModel>());
+				return this.presenter ?? (this.presenter = this.GetPresenter());
 			}
 		}
 
@@ -339,6 +339,17 @@
 		protected virtual LinkProvider GetLinkProvider()
 		{
 			return LinkManager.Provider;
+		}
+
+		/// <summary>
+		/// Override to supply a specific presenter other than what the PresenterFactory will dynamically inject.
+		/// </summary>
+		/// <returns>
+		/// The presenter.
+		/// </returns>
+		protected virtual IPresenter<TModel> GetPresenter()
+		{
+			return PresenterFactory.GetPresenter<TModel>();
 		}
 
 		/// <summary>

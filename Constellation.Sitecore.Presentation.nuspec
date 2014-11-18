@@ -18,7 +18,7 @@
 		
 		This namespace includes a handful of WebForms-compatible examples.
 	</description>
-	<releaseNotes>Updated all referenced libraries.</releaseNotes>
+	<releaseNotes>Fixed a caching bug caused by a change in the way CachingID works.</releaseNotes>
 	<copyright>Copyright 2014</copyright>
 	<tags>Sitecore</tags>
   </metadata>

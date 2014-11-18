@@ -43,22 +43,6 @@
 		// ReSharper restore InconsistentNaming
 
 		/// <summary>
-		/// Gets the caching id.
-		/// </summary>
-		public override string CachingID
-		{
-			get
-			{
-				if (string.IsNullOrEmpty(this.UniqueID))
-				{
-					return this.GetType().FullName;
-				}
-
-				return this.UniqueID;
-			}
-		}
-
-		/// <summary>
 		/// Gets the Database to be used to retrieve Items rendered by the View.
 		/// </summary>
 		public new Database Database
@@ -301,6 +285,19 @@
 			}
 
 			return string.Empty;
+		}
+
+		/// <summary>
+		/// The get caching id.
+		/// </summary>
+		/// <returns>
+		/// The <see cref="string"/>.
+		/// </returns>
+		protected override string GetCachingID()
+		{
+			var value = this.UniqueID + this.GetType().FullName;
+
+			return base.GetCachingID() + value;
 		}
 
 		/// <summary>

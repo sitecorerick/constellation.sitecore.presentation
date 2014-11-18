@@ -89,7 +89,7 @@
 				return false; // walked all the way up the inheritance tree with no match.
 			}
 
-			if (type.IsAssignableFrom(ancestor))
+			if (ancestor.IsAssignableFrom(type))
 			{
 				return true; // works for basic interface and class inheritance.
 			}
@@ -145,6 +145,16 @@
 
 			foreach (var assembly in assemblies)
 			{
+				if (assembly.FullName.StartsWith("System", StringComparison.InvariantCultureIgnoreCase))
+				{
+					continue;
+				}
+
+				if (assembly.FullName.StartsWith("Sitecore", StringComparison.InvariantCultureIgnoreCase))
+				{
+					continue;
+				}
+
 				var types = GetLoadableTypes(assembly);
 
 				foreach (var type in types)
