@@ -32,17 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Constellation.Html, Version=1.7.5330.21682, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Constellation.Html, Version=3.0.5519.21831, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Constellation.Html.1.7.5330.21682\lib\net45\Constellation.Html.dll</HintPath>
+      <HintPath>packages\Constellation.Html.3.0.5519.21831\lib\net45\Constellation.Html.dll</HintPath>
     </Reference>
-    <Reference Include="Constellation.Sitecore, Version=1.8.5409.24921, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Constellation.Sitecore, Version=3.0.5519.22168, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Constellation.Sitecore.1.8.5409.24921\lib\net45\Constellation.Sitecore.dll</HintPath>
+      <HintPath>packages\Constellation.Sitecore.3.0.5519.22168\lib\net45\Constellation.Sitecore.dll</HintPath>
     </Reference>
-    <Reference Include="Constellation.Sitecore.Items, Version=1.8.5409.25255, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Constellation.Sitecore.Items, Version=3.0.5519.22303, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Constellation.Sitecore.Items.1.8.5409.25255\lib\net45\Constellation.Sitecore.Items.dll</HintPath>
+      <HintPath>packages\Constellation.Sitecore.Items.3.0.5519.22303\lib\net45\Constellation.Sitecore.Items.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\_Binaries\Sitecore\Sitecore.Kernel.dll</HintPath>
